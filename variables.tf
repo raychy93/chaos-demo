@@ -41,7 +41,7 @@ variable "subnet_pe_cidr" {
 
 variable "node_vm_size" {
   type    = string
-  default = "Standard_B2s"
+  default = "Standard_DC2as_v5"
 }
 
 variable "min_count" {
