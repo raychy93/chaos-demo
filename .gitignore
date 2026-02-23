@@ -1,0 +1,19 @@
+# Local terraform directory 
+.terraform/
+
+# State files 
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Variables files 
+*.tfvars
+*.tfvars.json
+
+# Personal environment variables
+.env
+.azure/
+
+# Mac junk
+.DS_Store
+
