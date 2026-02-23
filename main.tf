@@ -37,7 +37,7 @@ resource "azurerm_subnet" "private_endpoints" {
   address_prefixes     = [var.subnet_pe_cidr]
 
   # Required for private endpoints
-  private_endpoint_network_policies_enabled = false
+  private_endpoint_network_policies = "Disabled"
 }
 
 # --- Log Analytics (for Container Insights) ---
@@ -169,7 +169,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
 
   # Whitelist home IP to API server
   api_server_access_profile {
-    authorize_ip_ranges = ["     "]
+    authorized_ip_ranges = ["99.236.42.130"]
   }
 
   default_node_pool {
